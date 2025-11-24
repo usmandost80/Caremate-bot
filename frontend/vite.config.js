@@ -1,3 +1,7 @@
-export default {
-  base: "/ai-triage-chatbot/" // must match your repo name
-};
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig({
+  plugins: [react()],
+  base: "/", // Ensure this matches the root path of your site
+});
